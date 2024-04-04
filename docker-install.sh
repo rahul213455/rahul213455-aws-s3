@@ -2,7 +2,7 @@
 
 sudo apt update -y
 sudo apt install -y git wget
-curl https://get.docker.com/ | sh
+curl -s https://get.docker.com/ | sh
 sudo systemctl enable docker
 sudo systemctl start docker
 sudo usermod -a -G docker $USER
