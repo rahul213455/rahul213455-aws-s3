@@ -1,3 +1,0 @@
-change hoste name command
-
-sudo hostnamectl set-hostname master
