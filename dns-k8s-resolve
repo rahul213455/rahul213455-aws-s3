@@ -1,3 +1,0 @@
-# use this command in terminal
-curl domain.com --resolve domain.com:80:IP
-curl example.com --resolve example.com:80:212.2.245.73
