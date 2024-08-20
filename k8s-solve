@@ -7,3 +7,19 @@ kubect create ns test
 kubectl config set-context --current --namespace=test
 ## back to dafault
 kubectl config set-context --current --namespace=default
+
+# see storage class
+kubectl get storageclass
+# specific to cloudprovide like aws-ebs etc
+
+# Edit node, pods, deployment, svc, ingress etc
+kubectl edit node node-1234
+kubectl edit pod pod-1234
+kubectl edit deployment deployment-1234
+kubectl edit svc svc-1234
+
+# describe node, pods, deployment, svc, ingress etc
+kubectl describe node node-1234
+kubectl describe pod pod-1234
+kubectl describe deployment deployment-1234
+kubectl describe svc svc-1234
