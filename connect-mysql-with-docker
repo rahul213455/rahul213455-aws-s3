@@ -1,0 +1,12 @@
+# Pull the latest MySQL Docker image
+docker pull mysql:latest
+
+# Set up environment variables with your AWS credentials and RDS details
+export MYSQL_HOST="your-rds-endpoint.amazonaws.com"
+export MYSQL_PORT="3306"
+export MYSQL_USER="your-username"
+export MYSQL_PASSWORD="your-password"
+export MYSQL_DATABASE="your-database"
+
+# Run the MySQL Docker container using the latest image
+docker run --rm -it mysql:latest mysql -h $MYSQL_HOST -P $MYSQL_PORT -u $MYSQL_USER -p
