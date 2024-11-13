@@ -1,0 +1,7 @@
+## To run an Nginx container with specified memory and CPU limits, you can use the --memory and --cpus flags. Here’s an example:
+
+docker run -d -p 80:80 --name nginx-server --memory 256m --cpus 0.5 nginx:latest
+
+Here’s what each option does:
+--memory 256m – Limits the container's memory usage to 256 MB.
+--cpus 0.5 – Limits the container to use at most 50% of one CPU core.
