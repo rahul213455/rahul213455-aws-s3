@@ -1,0 +1,5 @@
+## allow empty commit
+git commit -m "update" --allow-empty
+
+## amend command
+git commit --amend -m "an updated commit message"
