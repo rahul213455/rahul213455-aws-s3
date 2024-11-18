@@ -23,3 +23,7 @@ kubectl describe node node-1234
 kubectl describe pod pod-1234
 kubectl describe deployment deployment-1234
 kubectl describe svc svc-1234
+
+# add envs imperatively
+kubectl create deployment sample-deployment --image=nginx --env="PNB_1=value" --env="PNB_2=value2"
+
