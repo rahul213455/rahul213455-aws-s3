@@ -25,5 +25,4 @@ kubectl describe deployment deployment-1234
 kubectl describe svc svc-1234
 
 # add envs imperatively
-kubectl create deployment sample-deployment --image=nginx --env="PNB_1=value" --env="PNB_2=value2"
-
+kubectl create deployment sample-deployment --image=nginx --env="ENV_1=value1" --env="ENV_2=value2" --dry-run=client -o yaml
