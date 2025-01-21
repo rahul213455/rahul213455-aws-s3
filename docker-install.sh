@@ -15,7 +15,7 @@ _______________________________
 # yum commands
 
 sudo yum update -y
-sudo yum intsall -y git wget
+sudo yum install -y git wget
 sudo yum install -y docker
 sudo systemctl enable docker
 sudo systemctl start docker
