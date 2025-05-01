@@ -37,7 +37,7 @@ for i in {1..500}; do curl http://<alb-dns-name>/; done
 ```
 
 ## sample apache app from youtube
-
+```
 #!/bin/bash
 sudo apt update
 sudo apt install -y software-properties-common language-pack-en-base dialog apt-utils
@@ -51,5 +51,6 @@ sudo wget https://github.com/devopsdemoapps/devops-demo/raw/master/devops-demo.t
 sudo tar -xvzf devops-demo.tar.gz -C/var/www/html/
 sudo wget https://raw.githubusercontent.com/devopsdemoapps/devops- demo/master/devops-demo.sql
 sudo service apache2 restart
+```
 
 ## add database detial in it & create ami & autoscaling and LB
